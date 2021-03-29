@@ -1,0 +1,71 @@
+.container{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    .leftside{
+        width: 330px;
+        height: 550px;
+        background-color: white;
+    }
+    .leftsidebars{
+        width: 275px;
+        height: 375px;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 200px;
+        top: 170px;
+        z-index: 2;
+        animation-duration: 2s;
+        animation-name: slideinleft;
+    }
+    @keyframes slideinleft {
+        from{
+            margin-left: 100%;
+        }
+        to{
+            margin-left: 0%;
+        } 
+    }
+    .bars{
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .bars:hover{
+        color: rgb(224, 0, 0);
+    }
+    .rightside{
+        width: 1000px;
+        height: 550px;
+        background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/slider-img.jpg);
+        box-sizing: border-box;
+        background-size:cover;
+        background-position: center;
+        animation-duration: 2s;
+        animation-name: slideinright;
+    }
+    .middleside{
+        width: 220px;
+        height: 550px;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.5;
+        position: absolute;
+        left: 330px;
+        top: 90px;
+        animation-duration: 2s;
+        animation-name: slideinright;
+    }
+    @keyframes slideinright {
+        from{
+            margin-right: 200%;
+        }
+        to{
+            margin-right: 0%;
+        } 
+    }
+}

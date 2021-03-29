@@ -1,0 +1,21 @@
+.navbar{
+    height: 120px;
+    .navbar-brand{
+        margin-left: 130px;
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        list-style-type: none;
+        text-decoration: none;
+        .nav-link{
+            font-family: sans-serif;
+            font-weight: 700;
+            color:#718096
+        }
+        .nav-link:hover{
+            color: rgb(196, 0, 196);
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.about{
+    width: 100%;
+    height: 1200px;
+    background-color: white;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    .aboveboxes{
+        display: flex;
+        flex-direction: row;
+        .leftabout{
+            width: 380px;
+            height: 530px;
+            background-color: white;
+            margin-left: 120px;
+        }
+        .rightabout{
+            width: 730px;
+            height: 530px;
+            background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/service-img.jpg);
+            animation-duration: 2s;
+            animation-name: slideinright;
+            @keyframes slideinright {
+                from{
+                    margin-right: 100%;
+                }
+                to{
+                    margin-right: 0%;
+                } 
+            }
+        }
+        .middle{
+            width: 400px;
+            height: 120px;
+            margin-top: 120px;
+            position: absolute;
+            left: 350px;
+            animation-duration: 2s;
+            animation-name: slideinleft;
+            .middletext{
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            @keyframes slideinleft {
+                from{
+                    margin-left: 100%;
+                }
+                to{
+                    margin-left: 0%;
+                } 
+            }
+        }
+    }
+    .underboxes{
+        width: 100%;
+        height: 500px;
+        background-color: white;
+        margin-top: 120px;
+        .firsticoncontainer{
+            width: 100%;
+            height: 80px;
+            animation-duration: 2s;
+            animation-name: slideinleft;
+            .firsticon{
+                width: 370px;
+                height: 100px;
+                margin-left: 250px;
+                .lighticon{
+                    font-size: 17px;
+                    display: flex;
+                    flex-direction: row;
+                    font-family: 'Montserrat', sans-serif;
+                    i{
+                        margin-right: 20px;
+                        font-size: 62px;
+                    }
+                }
+            }
+        }
+        .secondiconcontainer{
+            width: 100%;
+            height: 150px;
+            align-items: right;
+            animation-duration: 2s;
+            animation-name: slideinleft;
+            /* animation-duration: 2s;
+            animation-name: slideinright2; */
+            .secondicon{
+                width: 320px;
+                height: 100px;
+                float: right;
+                margin-right: 250px;
+                .bagicon{
+                    /* animation-duration: 2s;
+                    animation-name: slideinright2; */
+                    font-size: 17px;
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    i{
+                        margin: auto;
+                        margin-bottom: 20px ;
+                        font-size: 62px;
+                    }
+                }
+            }
+        }
+        .thirdiconcontainer{
+            width: 100%;
+            height: 100%;
+            animation-duration: 2s;
+            animation-name: slideinleft;
+            .thirdicon{
+                width: 470px;
+                height: 100px;
+                margin-left: 200px;
+                .hearticon{   
+                    font-size: 17px;
+                    display: flex;
+                    flex-direction: row;
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: right;
+                }
+                i{
+                    margin-left: 10px;
+                    font-size: 62px;    
+                }
+            }
+            @keyframes slideinleft {
+                from{
+                    margin-left: 100%;
+                }
+                to{
+                    margin-left: 0%;
+                } 
+            }
+            /* @keyframes slideinright2 {
+                from{
+                    margin-right: 100%;
+                }
+                to{
+                    margin-right: 0%;
+                } 
+            } */
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.fourthcon{
+    width: 100%;
+    background-color: #111;
+    .fourth{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .card{
+        border-style: none;
+        background-color: transparent;
+        .card-body .card-title{
+            color: #c8b16f;
+            font-size: 1.6rem;
+            font-weight: 700;     
+        }
+        .card-body .card-subtitle{
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 5px 0;
+            letter-spacing: 1px;
+        }
+        .card-body .card-text{
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: .3px;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,294 @@
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(238, 236, 236);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+.categories{
+    width: 600px;
+    height: 20px;
+    background-color: rgb(238, 236, 236);
+    margin-top: 30px;
+    margin-left: 200px;
+    word-spacing: 30px;
+}
+.headerbuttons{
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 18px;
+    color: rgb(82, 81, 81);
+}
+.headerbuttons:hover{
+    background-color: rgb(238, 236, 236);
+    color: rgb(3, 87, 212);
+}
+.socialmedias{
+    float: right;
+    word-spacing: 30px;
+    width: 400px;
+    height: 20px;
+    background-color: rgb(238, 236, 236);
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.socialnetwork{
+    border-style: none;
+    font-size: 20px;
+    background-color: rgb(238, 236, 236);
+}
+.container{
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+    background-image: url(./travel-hd.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.paragraph{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(82, 81, 81);
+}
+p{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    letter-spacing: 0.5px;
+}
+body{
+    margin: 0;
+}
+.text{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.centertext1{  
+    color: rgb(35, 36, 94);
+    font-family: inherit;
+    text-align: center;
+}
+#firsttext{
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+#secondtext{
+    font-size: 72px;
+}
+#thirdtext{
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.container2{
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.travelphoto{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./travel.hd.jpg)
+}
+.eatphoto{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./food.jpg)
+}
+.relaxphoto{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./relax.jpg)
+}
+.container2button{
+    width: 130px;
+    height: 50px;
+    border-style: none;
+    outline-style: none;
+    font-size: 20px;
+    font-family: inherit;
+    background-color: white;
+    color: rgb(3, 87, 212);
+    transition-duration: 0.3s;
+}
+.container2button:hover{
+    background-color: rgb(3, 87, 212);
+    color: white;
+    transition-duration: 0.3s;
+    outline-style: none;
+}
+.content{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(221, 217, 217);   
+}
+.reklamlar{
+    margin-left: 65px;
+    display: flex;
+    flex-direction: row;
+}
+.first{
+    margin-top: 40px    ;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.travel{
+    font-size: 35px;
+    font-weight: 600;
+}
+.blog{
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+.second{
+    margin-top: 40px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.airplane{
+    font-size: 30px;
+    text-align: center;
+}
+.tour{
+    font-size: 30px;
+    font-weight: bold;
+}
+.plane{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+.third{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.worldtravel{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#world{
+    letter-spacing: 5px;
+}
+#travel{
+    letter-spacing: 1px;
+}
+.fourth{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.skycloud{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+.content2{
+    width: 900px;
+    height: 650px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(236, 235, 235);
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-size: cover;
+    background-position: center; */
+    margin: auto;
+    margin-top: 100px;
+}
+.comment{
+    width: 900px;
+    height: 200px;
+    margin-left: 250px;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px;
+    color: rgb(46, 45, 45);
+}
+.firstcomment{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.subtitle{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+.firstcomment:hover{
+    color: rgb(101, 58, 141);
+}
+h3:hover{
+    color: rgb(101, 58, 141);    
+}
+.content3{
+    width: 900px;
+    height: 650px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(236, 235, 235);
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}
+.content4{
+    width: 900px;
+    height: 650px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(236, 235, 235);
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}

@@ -1,0 +1,35 @@
+.container4{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    .container4left{
+        width: 380px;
+        height: 600px;
+        background-color: white;
+        margin-left: 100px;
+    }
+    .container4right{
+        width: 730px;
+        height: 600px;
+        background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/test1.jpg);
+        animation-duration: 2s;
+        animation-name: slideinright;
+    }
+    .container4text{
+        width: 350px;
+        height: 150px;
+        position: absolute;
+        left: 270px;
+        margin-top: 120px;
+        animation-duration: 2s;
+        animation-name: slideinleft;
+        .con4middletext{
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #262626;
+    display: fixed;
+    z-index: 999;
+    .buynowbutton{
+        margin-right: 5px;
+        padding: 6px 18px;
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: #82b440;
+        border-style: none;
+        color: white;
+    }
+    .buynowbutton:hover{
+        background-color: #6f9a37;
+    }
+}
+

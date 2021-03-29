@@ -1,0 +1,47 @@
+.sixthcon{
+    width: 100%;
+    .row .about{
+        background-color: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        .topics{
+            margin: auto;
+            padding-right: 14%;
+            padding-left: 14%;
+            .subhead{
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+            .mainhead{
+                letter-spacing: 1px;
+            }
+            .abouttext{
+               font-family: "Poppins", 'Segoe UI', 'Ubuntu','Droid Sans', sans-serif;
+               font-size: 18px;
+            }
+            .contactusbutton{
+                background-color: transparent;
+                width: 170px;
+                height: 50px;
+                border-style: solid;
+                border-color: rgb(121, 172, 121);
+                transition-duration: 0.3s;
+                transition-property: all;
+                transition-timing-function: ease;
+                .contactus{
+                    color: white;
+                    font-weight: 500;
+                    font-size: 12pt;
+                    letter-spacing: 1px;
+                    text-decoration: none; 
+                }
+            }
+            .contactusbutton:hover{
+                background-color: #c8b16f;
+                transition-duration: 0.3s;
+            }
+        }
+    }    
+}

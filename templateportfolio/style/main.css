@@ -1,0 +1,646 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.header .navbar {
+  margin: 20px;
+  width: 1330px;
+  height: 45px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar .menuicon {
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.header .navbar .centerlogo {
+  width: 150px;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .getaquote {
+  width: 150px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .getaquote .getaquotebutton {
+  width: 150px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  border-color: black;
+  border-radius: 30px;
+  outline: none;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header .navbar .getaquote .getaquotebutton:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container {
+  width: 100%;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .leftside {
+  width: 330px;
+  height: 550px;
+  background-color: white;
+}
+
+.container .leftsidebars {
+  width: 275px;
+  height: 375px;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 200px;
+  top: 170px;
+  z-index: 2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+@-webkit-keyframes slideinleft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.container .bars {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container .bars:hover {
+  color: #e00000;
+}
+
+.container .rightside {
+  width: 1000px;
+  height: 550px;
+  background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/slider-img.jpg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+.container .middleside {
+  width: 220px;
+  height: 550px;
+  background-color: white;
+  opacity: 0.5;
+  position: absolute;
+  left: 330px;
+  top: 90px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+@-webkit-keyframes slideinright {
+  from {
+    margin-right: 200%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes slideinright {
+  from {
+    margin-right: 200%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+.about {
+  width: 100%;
+  height: 1200px;
+  background-color: white;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .aboveboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about .aboveboxes .leftabout {
+  width: 380px;
+  height: 530px;
+  background-color: white;
+  margin-left: 120px;
+}
+
+.about .aboveboxes .rightabout {
+  width: 730px;
+  height: 530px;
+  background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/service-img.jpg);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+@keyframes slideinright {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+.about .aboveboxes .middle {
+  width: 400px;
+  height: 120px;
+  margin-top: 120px;
+  position: absolute;
+  left: 350px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+.about .aboveboxes .middle .middletext {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.about .underboxes {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  margin-top: 120px;
+}
+
+.about .underboxes .firsticoncontainer {
+  width: 100%;
+  height: 80px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+.about .underboxes .firsticoncontainer .firsticon {
+  width: 370px;
+  height: 100px;
+  margin-left: 250px;
+}
+
+.about .underboxes .firsticoncontainer .firsticon .lighticon {
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about .underboxes .firsticoncontainer .firsticon .lighticon i {
+  margin-right: 20px;
+  font-size: 62px;
+}
+
+.about .underboxes .secondiconcontainer {
+  width: 100%;
+  height: 150px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+  /* animation-duration: 2s;
+            animation-name: slideinright2; */
+}
+
+.about .underboxes .secondiconcontainer .secondicon {
+  width: 320px;
+  height: 100px;
+  float: right;
+  margin-right: 250px;
+}
+
+.about .underboxes .secondiconcontainer .secondicon .bagicon {
+  /* animation-duration: 2s;
+                    animation-name: slideinright2; */
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.about .underboxes .secondiconcontainer .secondicon .bagicon i {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 62px;
+}
+
+.about .underboxes .thirdiconcontainer {
+  width: 100%;
+  height: 100%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+  /* @keyframes slideinright2 {
+                from{
+                    margin-right: 100%;
+                }
+                to{
+                    margin-right: 0%;
+                } 
+            } */
+}
+
+.about .underboxes .thirdiconcontainer .thirdicon {
+  width: 470px;
+  height: 100px;
+  margin-left: 200px;
+}
+
+.about .underboxes .thirdiconcontainer .thirdicon .hearticon {
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+}
+
+.about .underboxes .thirdiconcontainer .thirdicon i {
+  margin-left: 10px;
+  font-size: 62px;
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.container3 {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container3 .container3above {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container3 .leftsidecontainer {
+  width: 350px;
+  height: 700px;
+  background-color: white;
+}
+
+.container3 .rightsidecontainer {
+  width: 1000px;
+  height: 600px;
+  background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/portfolio-img.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+.container3 .container3text {
+  width: 270px;
+  height: 200px;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 120px;
+  position: absolute;
+  left: 250px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+.container3 .con3articlebar {
+  width: 650px;
+  height: 50px;
+  margin-left: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container3 .con3articlebar .con3article h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container3 .con3articlebar .con3article .article {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container3 .con3articlebar .launchwebsite {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  left: 1120px;
+}
+
+.container3 .con3articlebar .launchwebsite .launchwebsitebutton {
+  width: 200px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  border-color: black;
+  border-radius: 30px;
+  outline: none;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container3 .con3articlebar .launchwebsite .launchwebsitebutton:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container4 {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+}
+
+.container4 .container4left {
+  width: 380px;
+  height: 600px;
+  background-color: white;
+  margin-left: 100px;
+}
+
+.container4 .container4right {
+  width: 730px;
+  height: 600px;
+  background-image: url(https://megaone.acrothemes.com/portfolio-agency/img/test1.jpg);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+.container4 .container4text {
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  left: 270px;
+  margin-top: 120px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+.container4 .container4text .con4middletext {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.con4undertext {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.con4undertext .con4text {
+  width: 550px;
+  height: 120px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.con4undertext .con4text .con4loremipsum {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.con4undertext i {
+  margin-top: 50px;
+  margin-right: 200px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */

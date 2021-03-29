@@ -1,0 +1,30 @@
+.thirdcon{
+    width: 100%;
+    padding: 75px 15px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #111;
+    .third{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+        max-width: 1500px;
+        margin: 0 auto;
+        .col-5{
+            font-size: 2.6rem;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            color: white;
+        }
+        .col-7 .text1{
+            font-family: "Poppins", 'Segoe UI', 'Ubuntu','Droid Sans', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: .3px;
+            color: white;
+        }
+    }
+}

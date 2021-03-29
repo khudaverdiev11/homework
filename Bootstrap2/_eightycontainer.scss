@@ -1,0 +1,17 @@
+.eightycon{
+    width: 100%;
+    height: 300px;
+    background-image: url(testimony.jpg);
+    background: linear-gradient(to left, #c8b16f, #c7ab5a);
+    opacity: 0.95;
+    .linearcon{
+        padding-top: 80px;
+        padding-left: 10%;
+        padding-right: 10%;
+        color: white;
+        font-size: 1.1rem;
+        letter-spacing: 1px ;
+        font-family: "Poppins", 'Segoe UI', 'Ubuntu','Droid Sans', sans-serif;
+        font-weight: 400;
+    }
+}
