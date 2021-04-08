@@ -1,0 +1,60 @@
+.section4{
+    width: 100%;
+    height: 550px;
+    .row{
+        width: 100%;
+        height: 550px;  
+        .photo{
+            width: 100%;
+            height: 550px;
+            background-image: url(section4img1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .photo2{
+            width: 100%;
+            height: 550px;
+            background-image: url(section4img2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec4text{
+            width: 100%;
+            height: 550px;
+            background-color: #272727;
+            .sec4texts{
+                padding: 45px;
+                .sec4text1{
+                    color: #939393;
+                }
+                .sec4text2{
+                    color: white;
+                    font-weight: 400;
+                }
+                .sec4text3{
+                    color: #939393;
+                    font-weight: 400;
+                }
+            }
+        }
+        @media only screen and (max-width:320px) {
+            .sec4text{
+                width: 100%;
+                height: 650px;
+            }
+        }
+        @media only screen and (max-width:320px) {
+            .photo{
+                width: 100%;
+                height: 320px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:320px) {
+    .section4{
+        width: 100%;
+        height: 1950px;
+    }
+}
+

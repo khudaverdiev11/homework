@@ -1,0 +1,91 @@
+.section5{
+    width: 100%;
+    height: 700px;
+    padding-top: 70px;
+    .navcon{
+        padding-bottom: 50px;
+        .sec5{
+            padding-left: 10%;
+            padding-right: 10%;
+            .sec5col{
+                padding-left: 20%;
+                padding-right: 20%;
+                .sec5navbar .nav .nav1{
+                    color: #696969;
+                    font-weight: 500;
+                    font-size: 14px;
+                    transition-duration: 0.7s;
+                    &:hover{
+                        color: black;
+                        transition-duration: 0.7s;
+                    }
+                }
+                @media only screen and (max-width:320px) {
+                    .sec5navbar{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center ;
+                        margin-top: 250px;
+                        .nav{
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .movingphotos{
+        width: 100%;
+        height: 500px;
+        .sec5under .image1{
+            width: 100%;
+            height: 250px;
+            .movingphototext{
+                position: absolute;
+                top: 170px;
+                left: 70px;
+                z-index: 2;
+            }
+            .img1{
+                width: 330px; 
+                height: 250px; 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                z-index: 3;
+                transition: height 0.3s;
+
+            }
+            @media only screen and (max-width:320px) {
+                .img1{
+                    width: 331px;
+                }
+            }
+            .img1:hover{
+                height: 150px;
+            }
+        }
+        @media only screen and (max-width:320px) {
+            .image1{
+                width: 100%;
+                height: 250px;
+                margin-left: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        @media only screen and (max-width:320px) {
+            .col-12{
+                height: 1000px !important;
+                margin-bottom: 100px;
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width:320px) {
+    .section5{
+        height: 2800px;
+    }
+}

@@ -1,0 +1,26 @@
+.section3{
+    padding: 10%;
+    text-align: center;
+    .section3texts{
+        padding-left: 15%;
+        padding-right: 15%;
+        .section3text2{
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+    }
+    .row .col-md-3 .card .icon{
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        background-color: rgb(250, 46, 80);
+        color: white;
+        border-radius: 50px;
+    }
+    @media only screen and (max-width:320px) {
+        .row .col-md-3 .card{
+            width: 18rem !important;
+            margin-bottom: 20px;
+        }
+    }
+}
