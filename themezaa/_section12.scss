@@ -1,0 +1,24 @@
+.section12{
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    .sec12row{
+        width: 100%;
+        height: 200px;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        .col-md-3{
+            .card{
+                border-style: none;
+            }
+        }
+        @media only screen and (max-width:320px) {
+            text-align: center;            
+        }
+    }
+}
+@media only screen and (max-width:320px) {
+    .section12{
+        height: 500px;
+    }           
+}
