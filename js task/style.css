@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(1, 1, 73);
+    display: flex;
+    flex-direction: row;
+}
+.leftmenu{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(65, 18, 90);
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 350px;
+    height: 150px;
+    margin:auto;
+    background-color: rgb(1, 1, 73);
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.card:hover{
+    background-color: rgb(250, 61, 61);
+}
+.cardnumber{
+    font-size: 20px;
+    color: white;    
+}
+.cardnumber2{
+    font-size: 20px;
+    color: white;    
+}
+.cardholder{
+    padding-top: 50px;
+    color: white;
+}
+.cardholder2{
+    padding-top: 100px;
+    color: white;
+}
+.holderandimg{
+    display: flex;
+    flex-direction: row;
+}
+.add{
+    text-align: center;
+}
+.first{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+}
+.second{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.cardimg{
+    width: 50px;
+    height: 32px;
+    background-image: url(mastercard.gif);
+    background-size: 100%;
+    background-position: center;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.cardimg2{
+    width: 50px;
+    height: 32px;
+    background-image: url(mastercard.gif);
+    background-size: 100%;
+    background-position: center;
+    margin-top: 50px;
+    margin-left: 135px;
+}
+.rightside{
+    width: 900px;
+    height: 650px;
+}
+.up{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(250, 61, 61);
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+}
+.up2{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(250, 61, 61);
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+}
+.up3{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(250, 61, 61);
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+}
+.under{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    display: none;
+}
+.sections{
+    font-size: 20px;
+}
+p{
+    color: white;
+}
