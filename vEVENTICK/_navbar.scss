@@ -1,0 +1,124 @@
+    .navbar{
+        height: 80px;
+        text-transform: uppercase;
+        background-color: black;
+        /* z-index: 2; */
+        .ticket{
+            padding-top: 12px;
+            padding-right: 50px;
+            padding-left: 50px;
+            border-left: 1px solid;
+            border-width: thin;
+            border-color: gray;
+            .gettickets{
+                color: rgb(116, 116, 116);
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 1px;
+                transition-duration: 0.3s;
+                &:hover{
+                    color: white;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+        .navbar-brand{
+            width: 200px;
+            height: 45px;
+            background-image: url(./media/logo.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .navbar-collapse{
+            width: 700px !important;
+            padding-left: 170px;
+        }
+        .fa-search{
+            padding-left: 20px;
+            padding-right: 20px;
+            border-left: 1px solid;
+            border-right: 1px solid;
+            border-width: thin;
+        }
+        .nav-link{
+            padding-right: 20px !important;
+            /* padding-left: 20px !important; */
+            color: rgb(189, 184, 184);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition-duration: 0.3s;
+            &:hover{
+                color: white;
+                transition-duration: 0.3s;
+            }
+        }
+        .nav-item{
+            height: 80px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .speaker{
+            width: 220px !important;
+        }
+        .sponsor{
+            width: 230px !important;
+        }
+        .dropdown-menu{
+            width: 150px;
+            background-color: black;
+            padding-left: 5px;
+            padding-top: 10px;
+            padding-bottom: 7px;
+            padding-right: 5px;
+            .dropdown-item{
+                color: white;
+                background-color: black;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 1px;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+        @media only screen and (max-width: 320px){
+            .navbar-collapse{
+                padding-left: 0px !important;
+                background-color: rgb(39, 38, 38);
+                margin-bottom: 10px;
+            }
+            .ticket{
+                display: none;
+            }
+        }             
+    }
+    @media only screen and (max-width: 320px){
+        .navbar .navbar-brand{
+            margin-left: 0;
+        }
+        .navbar .navbar-toggler{
+            position: absolute;
+            left: 250px;
+            top: 30px;
+        }
+    }
+    @media only screen and (min-width: 375px){
+        .navbar .navbar-toggler{
+            position: absolute;
+            left: 300px;
+            top: 30px;
+        }
+        /* .ticket{
+            display: none;
+        } */
+    }
+    @media only screen and (min-width: 768px){
+        .navbar .navbar-toggler{
+            position: absolute;
+            left: 700px;
+            top: 22px;
+        }
+        /* .ticket{
+            position: absolute;
+            left: 500px;
+        } */
+    }      

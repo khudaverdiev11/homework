@@ -1,0 +1,93 @@
+.section2{
+    width: 100%;
+    height: 785px;
+    background-image: url(./media/static-images.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .container{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        .bannerdetails{
+            text-align: center;
+            margin: auto;
+            color: white;
+        }
+        .bannerdetails h4{
+            font-size: 30px;
+            letter-spacing: 3px;
+            color: #e71c37;
+            font-weight: bold;
+        }
+        .bannerdetails h2{
+            margin-top: 20px;
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        .bannerdetails p{
+            font-size: 20px;
+            margin-top: 30px;
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+        .bannerdetails a{
+            text-decoration: none;
+            color: #e71c37;
+        }
+        .bannerbtn{
+            width: 220px;
+            height: 45px;
+            margin-top: 20px;
+            border-style: none;
+            border-radius: 3px;
+            text-transform: uppercase;
+            color: #1d1d1d;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        #getticket{
+            transition: 0.3s;
+            &:hover{
+                background-color: #e71c37;
+                color: white;
+                transition: 0.3s;
+            }
+        }
+        #video{
+            background-color: #e71c37;
+            color: white;
+            transition: 0.3s;
+            &:hover{
+                background-color: white;
+                color: #1d1d1d;
+                transition: 0.3s;
+            }
+        }
+        li{
+            margin-top: 50px;
+            list-style: none;
+            display: inline-block;
+            .socialmedias{
+                width: 45px;
+                height: 45px;
+                border-style: none;
+                border-radius: 30px;
+                margin: 3px;
+                color: #e71c37;
+                background-color: white;
+                transition: 0.4s;
+                &:hover{
+                    background-color: #e71c37;
+                    color: white;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}

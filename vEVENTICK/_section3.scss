@@ -1,0 +1,106 @@
+.section3{
+    width: 100%;
+    padding-top: 80px;
+    .container{
+        width: 100%;
+        .line1{
+            width: 200px;
+            height: 1px;
+            background-color: #dbdbdb;
+            text-align: center;
+            margin: 8px auto 3px auto;
+        }
+        .line2{
+            width: 150px;
+            height: 1px;
+            background-color: #dbdbdb;
+            text-align: center;
+            margin: 8px auto 3px auto;
+        }
+        .line3{
+            width: 100px;
+            height: 1px;
+            background-color: #dbdbdb;
+            text-align: center;
+            margin: 8px auto 3px auto;
+        }
+        .sec3 p{
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #646a7c;
+        }
+        .text-uppercase{
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        .teamimage img{
+            max-width: 100%;
+            height: auto;
+        }
+        .teamimage{
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                .social{
+                    transform: translate(0%, -95%);
+                }
+            }
+            .social{
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 335px;
+                padding: 60px 15px 60px 15px;
+                top: calc(100% - 4px);
+                text-align: center;
+                border-top: 4px solid #e71c37;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: #eee;
+                transition: 0.5s;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    .socialmedias{
+                        width: 45px;
+                        height: 45px;
+                        border-width: thin;
+                        border-color: #e71c37;
+                        border-radius: 45px;
+                        margin: 3px;
+                        color: #e71c37;
+                        background-color: transparent;
+                        transition: 0.4s;
+                        &:hover{
+                            background-color: #e71c37;
+                            color: white;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+                .moreinfo{
+                    cursor: pointer;
+                    transition: 0.4s;
+                    &:hover{
+                    color: #e71c37;
+                    transition: 0.4s;
+                    }
+                }
+            }
+        }
+        .teaminfo{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .teaminfo h6{
+            color: #646a7c;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 0 !important;
+        }
+        .teaminfo p{
+            color: #646a7c;
+        }
+    }
+}

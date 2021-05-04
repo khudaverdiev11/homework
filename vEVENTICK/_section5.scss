@@ -1,0 +1,43 @@
+.section5{
+    width: 100%;
+    background-image: url(./media/funfact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .sec5{
+        .row{
+            .col-xs-12{
+                .innerdiv{
+                    text-align: center;
+                    background-color: white;
+                    color: black;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-size: 20px;
+                    position: relative;
+                    .number{
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                    .innerborder{
+                        border: 1px solid #ebe8e8;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: 12px;
+                    }
+                }
+                .innerdiv i{
+                    color: #e71c37;
+                    font-size: 30px;
+                }
+                .innerdiv p{
+                   margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
