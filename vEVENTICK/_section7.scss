@@ -1,0 +1,146 @@
+.section7{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f6f6f6;
+    .container{
+        width: 100%;
+        .row{
+            .line1{
+                width: 200px;
+                height: 1px;
+                background-color: #dbdbdb;
+                text-align: center;
+                margin: 8px auto 3px auto;
+            }
+            .line2{
+                width: 150px;
+                height: 1px;
+                background-color: #dbdbdb;
+                text-align: center;
+                margin: 8px auto 3px auto;
+            }
+            .line3{
+                width: 100px;
+                height: 1px;
+                background-color: #dbdbdb;
+                text-align: center;
+                margin: 8px auto 3px auto;
+            }
+            .sec7 p{
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 24px;
+                color: #646a7c;
+            }
+            .text-uppercase{
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+        }
+        #secondrow{
+            .col-xs-12{
+                .gallerycontent{
+                    width: 100%;
+                    height: 233px;
+                    color: white;
+                    text-align: center;
+                    padding: 90px 50px;
+                    position: absolute;
+                    background-color: #e71c37;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                .gallery{
+                    width: 100%;
+                    height: 233px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    &:hover{
+                        .gallerycontent{
+                            opacity: 0.9;
+                        }
+                        .contentbtn{
+                            transform: translateX(0%);
+                            opacity: 1;
+                        }
+                    }
+                    .contentbtn{
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        padding: 5px;
+                        transform: translateX(70%);
+                        opacity: 0;
+                        background-color: white;
+                        text-align: center;
+                        font-size: 20px;
+                        color: #e71c37;
+                        transition: 0.3s;
+                    }
+                }
+                .gallery img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        #thirdrow{
+            .col-xs-12{
+                .gallerycontent{
+                    width: 100%;
+                    height: 233px;
+                    color: white;
+                    text-align: center;
+                    padding: 90px 50px;
+                    position: absolute;
+                    background-color: #e71c37;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                .gallery{
+                    width: 100%;
+                    height: 240px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    &:hover{
+                        .gallerycontent{
+                            opacity: 0.9;
+                        }
+                        .contentbtn{
+                            transform: translateX(0%);
+                            opacity: 1;
+                        }
+                    }
+                    .contentbtn{
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        padding: 5px;
+                        transform: translateX(70%);
+                        opacity: 0;
+                        background-color: white;
+                        text-align: center;
+                        font-size: 20px;
+                        color: #e71c37;
+                        transition: 0.3s;
+                    }
+                }
+                .gallery img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

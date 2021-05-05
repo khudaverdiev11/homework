@@ -1,0 +1,110 @@
+.section6{
+    width: 100%;
+    padding-top: 80px;
+    .row{
+        .videoimg{
+            background-image: url(./media/gallery2.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            text-align: center;
+            .playbutton {
+                background: #fff;
+                color: #FF5A60;
+                font-size: 30px;
+                padding-right: 5px;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                top: 0px;
+                margin: auto;
+                text-align: center;
+                border-radius: 50%;
+                i {
+                    line-height: 80px;
+                    margin-left: 10px;
+                }
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border: 1px solid #ccc;
+                    border-radius: 50%;
+                    left: -20px;
+                    right: -20px;
+                    top: -20px;
+                    bottom: -20px;
+                    animation: animate 1.5s linear infinite;
+                    opacity: 0;
+                }
+                &::after {
+                    animation-delay: 0.5s;
+                }
+                @keyframes animate{
+                    0%
+                    {
+                        transform: scale(.5);
+                    }
+                    50%
+                    {
+                        opacity: 1;
+                    }
+                    100%
+                    {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+        .eventspecial{
+            .line1{
+                width: 200px;
+                height: 1px;
+                background-color: #dbdbdb;
+                text-align: center;
+                margin: 8px auto 3px auto;
+            }
+            .line2{
+                width: 150px;
+                height: 1px;
+                background-color: #dbdbdb;
+                text-align: center;
+                margin: 8px auto 3px auto;
+            }
+            .line3{
+                width: 100px;
+                height: 1px;
+                background-color: #dbdbdb;
+                text-align: center;
+                margin: 8px auto 3px auto;
+            }
+            .text-uppercase{
+                letter-spacing: 3px;
+                font-weight: bold;
+            }
+        }
+        .eventcontent{
+            .contentcard{
+                width: 100%;
+                background-color: #eee;
+                margin-top: 10px;
+                cursor: pointer;
+                .eventtoggle strong{
+                    background-color: white;
+                    padding: 3px 6px;
+                    color: #e71c37;
+                }
+                .eventtoggle span{
+                    font-weight: bold;
+                }
+            }
+            .togglecontent{
+                padding: 1rem;
+                display: none;
+            }
+        }
+    }
+}

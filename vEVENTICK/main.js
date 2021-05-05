@@ -87,3 +87,40 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".number").counterUp({delay:10, time:1000});
 });
+$(document).ready(function(){
+    $("#firsttoggle").click(function(){
+        $("#firstcontent").slideToggle();
+        $("#thirdcontent").slideUp();
+        $("#secondcontent").slideUp();
+    });
+    $("#secondtoggle").click(function(){
+        $("#secondcontent").slideToggle();
+        $("#firstcontent").slideUp();
+        $("#thirdcontent").slideUp();
+    });
+    $("#thirdtoggle").click(function(){
+        $("#thirdcontent").slideToggle();
+        $("#secondcontent").slideUp();
+        $("#firstcontent").slideUp();
+    });
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    dots: false,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    },
+})

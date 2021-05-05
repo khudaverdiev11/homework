@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/de1be43056.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <title>Document</title>
 </head>
 <body>
@@ -22,8 +24,8 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Schedule <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="speakerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown" id="speakerDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="NavLinkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Speakers
                 </a>
                 <div class="dropdown-menu speaker" aria-labelledby="navbarDropdown">
@@ -32,8 +34,8 @@
                   <a class="dropdown-item" href="#">SPEAKERS DETAILS PAGES</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pricesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item dropdown" id="pricesDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="NavLinkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Prices
                 </a>
                 <div class="dropdown-menu prices" aria-labelledby="navbarDropdown">
@@ -41,8 +43,8 @@
                   <a class="dropdown-item" href="#">PRICES STYLE 2</a>
                 </div>
               </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown" id="blogDropdown">
+              <a class="nav-link dropdown" href="#" id="NavLinkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Blog <i class="fas fa-caret-down"></i>
               </a>
               <div class="dropdown-menu blog" aria-labelledby="navbarDropdownMenuLink">
@@ -50,8 +52,8 @@
                 <a class="dropdown-item" href="#">BLOGS STYLE 2</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="sponsorDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown" id="sponsorDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="NavLinkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sponsors
                 </a>
                 <div class="dropdown-menu sponsor" aria-labelledby="navbarDropdown">
@@ -63,8 +65,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Contacts</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown" id="pagesDropdown">
+                <a class="nav-link dropdown" href="#" id="NavLinkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Pages <i class="fas fa-caret-down"></i>
                 </a>
                 <div class="dropdown-menu pages" aria-labelledby="navbarDropdownMenuLink">
@@ -355,13 +357,233 @@
     <!-- SECTION VIDEO START -->
     <section class="container-fluid section6">
       <div class="row sec6">
-        <div class="col-lg-6 col-sm-12 col-xs-12 videoimg"></div>
+        <div class="col-lg-6 col-sm-12 col-xs-12 videoimg">
+          <div class="playbutton">
+            <i class="fa fa-play"></i>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-xs-12 eventspecial pt-5">
+          <div class="eventheader text-center">
+            <h2 class="text-uppercase">Event <span style="color: #e71c37">Pricing</span></h2>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="col-lg-12 eventcontent">
+            <div class="contentcard p-3 d-inline-block" id="firsttoggle">
+              <div class="eventtoggle"><strong>1.</strong> <span>WHAT IS LOREM IPSUM</span></div>
+            </div>
+            <div class="togglecontent" id="firstcontent"> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu ante, ullamcorper sit amet fringilla in, luctus ac mi. Lorem ipsum dolor sit amet, consectetur adipiscing</p>  
+            </div>
+            <div class="contentcard p-3 d-inline-block" id="secondtoggle">
+              <div class="eventtoggle"><strong>2.</strong> <span>WHAT IS LOREM IPSUM</span></div>
+            </div>
+            <div class="togglecontent" id="secondcontent">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu ante, ullamcorper sit amet fringilla in, luctus ac mi. Lorem ipsum dolor sit amet, consectetur adipiscing</p>  
+            </div>
+            <div class="contentcard p-3 d-inline-block" id="thirdtoggle">
+              <div class="eventtoggle"><strong>3.</strong> <span>WHAT IS LOREM IPSUM</span></div>
+            </div>
+            <div class="togglecontent" id="thirdcontent">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu ante, ullamcorper sit amet fringilla in, luctus ac mi. Lorem ipsum dolor sit amet, consectetur adipiscing</p>  
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- SECTION VIDEO END -->
+    <!-- SECTION GALLERY START -->
+    <section class="container-fluid section7">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1 col-lg-2"></div>
+          <div class="col-xs-12 col-sm-10 col-lg-8 text-center sec7">
+            <h2 class="text-uppercase">Event <span style="color: #e71c37">gallery</span></h2>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <p>Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing
+              vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. </p>
+          </div>
+          <div class="col-sm-1 col-lg-2"></div>
+        </div>
+        <div class="row mt-4" id="secondrow">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="gallery" id="galleryimg1">
+              <img src="./media/gallery1.jpg">
+              <div class="gallerycontent">
+                <h4>Event Title</h4>
+                <span>Category</span>
+              </div>
+              <div class="contentbtn">
+                <i class="fa fa-photo"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="gallery" id="galleryimg2">
+              <img src="./media/gallery2.jpg">
+              <div class="gallerycontent">
+                <h4>Event Title</h4>
+                <span>Category</span>
+              </div>
+              <div class="contentbtn">
+                <i class="fa fa-photo"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="gallery" id="galleryimg3">
+              <img src="./media/gallery3.jpg">
+              <div class="gallerycontent">
+                <h4>Event Title</h4>
+                <span>Category</span>
+              </div>
+              <div class="contentbtn">
+                <i class="fa fa-photo"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4" id="thirdrow">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="gallery" id="galleryimg4">
+              <img src="./media/gallery4.jpg">
+              <div class="gallerycontent">
+                <h4>Event Title</h4>
+                <span>Category</span>
+              </div>
+              <div class="contentbtn">
+                <i class="fa fa-photo"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="gallery" id="galleryimg5">
+              <img src="./media/gallery5.jpg">
+              <div class="gallerycontent">
+                <h4>Event Title</h4>
+                <span>Category</span>
+              </div>
+              <div class="contentbtn">
+                <i class="fa fa-photo"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="gallery" id="galleryimg6">
+              <img src="./media/gallery6.jpg">
+              <div class="gallerycontent">
+                <h4>Event Title</h4>
+                <span>Category</span>
+              </div>
+              <div class="contentbtn">
+                <i class="fa fa-photo"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION GALLERY END -->
+    <!-- SECTION NEWS START -->
+    <section class="container-fluid section8">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1 col-lg-2"></div>
+          <div class="col-xs-12 col-sm-10 col-lg-8 text-center sec4">
+            <h2 class="text-uppercase">Our great <span style="color: #e71c37">sponsers</span></h2>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <p>Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing
+              vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. </p>
+          </div>
+          <div class="col-sm-1 col-lg-2"></div>
+        </div>
+        <div class="row sec8row2">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="./media/partner-1.png" alt="">
+              </div>
+              <div class="item">
+                <img src="./media/partner-2.png" alt="">
+              </div>
+              <div class="item">
+                <img src="./media/partner-3.png" alt="">
+              </div>
+              <div class="item">
+                <img src="./media/partner-4.png" alt="">
+              </div>
+              <div class="item">
+                <img src="./media/partner-5.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- SECTION NEWS END -->
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 div1">
+                  <h5>About EventCamp</h5>
+                  <p>Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Mauris accumsan eros eget libero posuere vulputate.
+                      Etiam elit elit.</p>
+              </div>
+              <div class="col-lg-2 col-md-6 div2">
+                  <h5>Explore</h5>
+                  <ul>
+                      <li>
+                          <i class="fa fa-chevron-right"></i>
+                          <a href="">Upcomin Events</a>
+                      </li>
+                      <li>
+                          <i class="fa fa-chevron-right"></i>
+                          <a href="">Contact Us</a>
+                      </li>
+                      <li>
+                          <i class="fa fa-chevron-right"></i>
+                          <a href="">About Eventick</a>
+                      </li>
+                      <li>
+                          <i class="fa fa-chevron-right"></i>
+                          <a href="">Press</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 div3">
+                  <h5>Instagram Photos</h5>
+                  <div class="row">
+                      <img src="https://preview.templatehouse.net/eventick/demo/images/footer-thumb-4.jpg" alt="" width="80px" height="65px">
+                      <img src="https://preview.templatehouse.net/eventick/demo/images/footer-thumb-2.jpg" alt="" width="80px" height="65px">
+                      <img src="https://preview.templatehouse.net/eventick/demo/images/footer-thumb-5.jpg" alt="" width="80px" height="65px">
+                  </div>
+                  <div class="row">
+                      <img src="https://preview.templatehouse.net/eventick/demo/images/footer-thumb-2.jpg" alt="" width="80px" height="65px">
+                      <img src="https://preview.templatehouse.net/eventick/demo/images/footer-thumb-5.jpg" alt="" width="80px" height="65px">
+                      <img src="https://preview.templatehouse.net/eventick/demo/images/footer-thumb-4.jpg" alt="" width="80px" height="65px">
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 div4">
+                  <h5>Newsletter</h5>
+                  <p>The weather started getting rough</p>
+                  <input type="email" placeholder="Email Address">
+                  <button>SUBSCRIBE NOW</button>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
