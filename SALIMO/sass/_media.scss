@@ -1,0 +1,47 @@
+@media only screen and (max-width:768px) {
+    .section2 {
+        #left1, #left2, #left3{
+            position: absolute;
+            left: 20px;
+        }
+        #right1, #right2, #right3{
+            position: absolute;
+            right: 20px;
+        }
+        .textslider{
+            position: absolute;
+            left: 140px ;
+            .subtitle1{
+                font-size: 60px ;
+            }
+        }
+    }
+    .section3 .leftside {
+        text-align: center;
+        .sec3nav{
+            justify-content: center;
+        }
+    }
+    .section4{
+        height: 1700px;
+        margin-top: 300px;
+        padding-top: 150px;     
+        .sec4left{
+            display: flex;
+            justify-content: center;
+            .sec4img{
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+        }
+        .sec4right{
+            text-align: center;
+            h2{
+                margin-bottom: 20px;
+            }
+            .social{
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.section3{
+    width: 100%;
+    height: 500px;
+    background-color: #242424;
+    margin-top: -80px;
+    .container-fluid{
+        padding-left: 10%;
+        padding-right: 10%;
+        .sec3head{
+            text-align: center;
+            h1{
+                color: white;
+                font-size: 50px;
+                font-weight: 700;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                span{
+                    color: yellow;
+                }
+            }
+            h6{
+                font-size: 20px;
+                color: white;
+            }
+            .outertext{
+                color: rgb(179, 176, 176);
+                height: 20px;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                .line1{
+                    background-color: gray;
+                    width: 300px;
+                    height: 1px;
+                }
+                i{
+                    font-size: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+        .sec3about{
+            .leftside{
+                height: 400px;
+                padding-left: 0px;
+                p{
+                    font-size: 15px;
+                }
+                h2, p{
+                    color: white;
+                }
+                hr{
+                    background-color:rgb(68, 68, 68);
+                }
+                span{
+                    color: white;
+                    cursor: pointer;
+                }
+                .btn{
+                    background-color: rgb(211, 211, 2);
+                    border-radius: 25px;
+                    color:white;
+                }
+                .sec3nav{
+                    .missionnav, .advnav{
+                        padding-right: 25px;
+                        border-right: 1px solid white;
+                    }
+                    .advnav, .guarnav{
+                        padding-left: 25px;
+                    }
+                    .missionnav, .guarnav:active{
+                        color: yellow;
+                    }
+                    .style1{
+                        color: rgb(211, 211, 2);
+                    }
+                }
+                #navcontent2, #navcontent3{
+                    display: none;
+                }
+            }
+            .rightside{
+                .imgbox{
+                    width: 500px;
+                    height: 344px;
+                    border: 2px solid yellow;
+                    border-radius: 5px;
+                    float: right;
+                    position: relative;
+                }
+                .rightsideimg{
+                    width: 500px;
+                    height: 344px;
+                    background-image: url(../media/about.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

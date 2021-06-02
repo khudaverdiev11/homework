@@ -1,0 +1,157 @@
+.section2{
+    .carousel-inner img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center; 
+        filter: brightness(50%);
+        animation: animatePlate 6.5s linear infinite;
+    }
+    @keyframes animatePlate {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.2);
+      }
+    }
+    .lefticonslider{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-image: url("../media/kenburns1.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 265px;
+        left: 70px;
+        display: none;
+        z-index: 2;
+        animation: appearleft 0.3s;
+    }
+    .righticonslider{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-image: url("../media/kenburns1.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 265px;
+        right: 70px;
+        display: none;
+        z-index: 2;
+        animation: appearright 0.3s;
+    }
+    .lefticonslider2{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-image: url("../media/kenburns2.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 265px;
+        left: 70px;
+        display: none;
+        z-index: 2;
+        animation: appearleft 0.3s;
+    }
+    .righticonslider2{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-image: url("../media/kenburns2.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 265px;
+        right: 70px;
+        display: none;
+        z-index: 2;
+        animation: appearright 0.3s;
+    }
+    .lefticonslider3{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-image: url("../media/kenburns3.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 265px;
+        left: 70px;
+        display: none;
+        z-index: 2;
+        animation: appearleft 0.3s;
+    }
+    .righticonslider3{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-image: url("../media/kenburns3.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 265px;
+        right: 70px;
+        display: none;
+        z-index: 2;
+        animation: appearright 0.3s;
+    }
+    .textslider{
+        position: absolute;
+        top: 230px;
+        left: 400px;
+        z-index: 2;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        .subtitle1{
+            font-size: 70px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            z-index: 1;
+            animation: inner-left 1s 1s ease both,
+            text-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+        }
+        .subtitle2{
+            letter-spacing: 3px;
+            animation: inner-left 1s 1s ease both,
+            text-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+        }
+        .btn{
+            background-color: rgb(211, 211, 2);
+            border-radius: 25px;
+            color:white;
+            animation: inner-left 1s 1s ease both,
+            text-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+        }
+        @keyframes inner-left {
+            from {
+              transform: translateY(-50%);
+            }
+            to {
+              transform: none;
+            }
+        }
+          @keyframes text-clip {
+            from {
+              clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            }
+            to {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+          @keyframes appearleft{
+            from{
+              transform: translateX(-50%);
+            }
+            to{
+              transform: 0;
+            }
+        }
+          @keyframes appearright{
+            from{
+              transform: translateX(50%);
+            }
+            to{
+              transform: 0;
+            }
+        }          
+  }
+}
