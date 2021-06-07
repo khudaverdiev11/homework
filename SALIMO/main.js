@@ -43,3 +43,16 @@ function navcontent2(){
   document.querySelector('.missionnav').style.cssText = 'color:white';
   document.querySelector('.advnav').style.cssText = 'color:white';
 }
+
+$(function(){
+  $(".list").click(function(){
+    const value = $(this).attr("data-filter");
+    if(value == "All"){
+      $(".itemBox").show(1000);
+    }
+    else{
+      $(".itemBox").not("."+value).hide(1000);
+      $(".itemBox").filter("."+value).show(1000);
+    }
+  })
+})
